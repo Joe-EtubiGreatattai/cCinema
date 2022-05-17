@@ -1,0 +1,25 @@
+:root {
+    --dark1: #333;
+    --light1:#eee;
+    --orange: red;
+   }
+ 
+ 
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ body{
+     background: var(--dark1);
+ }
+
+ 
+.section-1{
+    width: 100%;
+    height: max(60vh,450px);
+    
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

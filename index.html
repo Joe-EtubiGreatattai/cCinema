@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name=" theme-color" content="#333">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></head>
+<body>
+    <div class="overlay">
+        
+    </div>
+   <div class="alert-holder">
+       <div class="dark"></div>
+    <div class="alert-div">
+        <div>
+            <div id="success">
+                <div class="alert">
+                    <div class="sucess-icon">
+                        <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                    </div>
+                    <h2 class="alert-header">
+        
+                    </h2>
+                    <p class="alert-text">
+                        Registration succesful !, Login ID has been sent to your email.
+                    </p>
+                    <div class="remove"><ion-icon name="close-sharp"></ion-icon></div>
+                </div>
+            </div>
+            <div id="fail">
+                <div class="alert">
+                    <div class="fail-icon">
+                        <ion-icon name="close-circle-sharp"></ion-icon>
+                    </div>
+                    <h2 class="alert-header">
+        
+                    </h2>
+                    <p class="alert-text" id="fail">
+                        Registration Failed !, please try again later.
+                    </p>
+                    <div class="remove"><ion-icon name="close-sharp"></ion-icon></div>
+                </div>
+            </div>
+           <div id="info">
+            <div class="alert">
+                <div class="info-icon">
+                    <ion-icon name="information-circle-sharp"></ion-icon>
+                </div>
+                <h2 class="alert-header">
+    
+                </h2>
+                <p class="alert-text">
+                   Oopsl !, there seems to be a problem we'll get back to you soon.
+                </p>
+                <div class="remove"><ion-icon name="close-sharp"></ion-icon></div>
+            </div>
+           </div>
+        </div>
+        
+    </div>
+   </div>
+    <div class="container">
+        <div class="login-form">
+            <form action="#!">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="UserID" required><ion-icon name="person"></ion-icon>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Password" required><ion-icon name="lock-open"></ion-icon>
+                </div>
+                <div class="button-holder">
+                    
+                 <button title="Login"><ion-icon name="key"></ion-icon> Access</button> <div class="adduser" title="create account"><ion-icon name="person-add-sharp"></ion-icon></div>
+        
+                </div>
+            </form>
+        </div>
+
+        <div class="sign-up-form">
+            <form action="#!">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Full name"><ion-icon name="person"></ion-icon>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="E-mail"><ion-icon name="mail-sharp"></ion-icon>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="password"><ion-icon name="lock-open"></ion-icon>
+                </div>
+                <div class="button-holder">
+                    
+                 <button id="register" title="Register"><ion-icon name="add-sharp"></ion-icon> Register</button> <div class="backtologin" title="create account"><ion-icon name="close-sharp"></ion-icon></div>
+        
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+   
+  <script>
+      $(".adduser").click(function(){
+  $(".login-form").fadeOut('fast');  
+  $(".sign-up-form").fadeIn('fast');
+});
+
+$(".backtologin").click(function(){
+  $(".sign-up-form").fadeOut('fast'); 
+  $(".login-form").fadeIn('fast');
+});
+
+
+$("#register").click(function(){
+  $(".alert-holder").fadeIn('fast'); 
+  $("#success").fadeIn('fast'); 
+});
+
+
+$(".remove").click(function(){
+  $(".alert-holder").fadeOut('fast'); 
+  $("#success").fadeOut('fast'); 
+});
+  </script>  
+</body>
+</html>
