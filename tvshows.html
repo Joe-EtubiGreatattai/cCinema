@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tvshows</title>
+    <link rel="stylesheet" href="css/hompage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<style>
+    .swiper-pagination-bullet {
+        background: red;
+    }
+</style>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <div class="user-info">
+            <div class="user-info-image">
+                <img src="images/user-2.png" alt="">
+            </div>
+            <div class="user-info-details">
+                <p>John Doe</p>
+                <p>@username</p>
+            </div>
+        </div>
+            <ul class="menu">
+                <li class="active"><a href="homepage.html"><ion-icon name="home"></ion-icon> <span>Home</span></a></li>
+                <li class="browse"><a href="# "><ion-icon name="search"></ion-icon> Browse</a></li>
+                <ul id="submenu3" class="genre-mobile sub-menu-mobile">
+                    <li> 
+                    <div class="search-div mobile-search">
+                        <ion-icon name="search-circle"></ion-icon> <input type="search" placeholder="Search" name="" id="">
+                    </div>
+                </li>  
+                    </ul>
+                <li><a href="movies.html"><ion-icon name="film"></ion-icon> Movies</a></li>
+                <li><a href="tvshows.html"><ion-icon name="film"></ion-icon>  Tv shows</a></li>
+                <li class="watchlist-element-mobile watchlist-sub-menu"><a href="# "><ion-icon name="list"></ion-icon> Watchlist
+                        <ul id="submenu1" class="watchlist-mobile sub-menu-mobile">
+                            <li><a href="# ">Uncharted</a></li>
+                            <li><a href="# ">X-men apocalypes</a></li>
+                            <li><a href="# ">Aquaman</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="genre-sub-menu">
+                    <a href="# "><ion-icon name="recording"></ion-icon> Geners
+                        <ul id="submenu2" class="genre-mobile sub-menu-mobile">
+                            <li><a href="# ">Action</a></li>
+                            <li><a href="# ">Romance</a></li>
+                            <li><a href="# ">Sci-fi</a></li>
+                            <li><a href="# ">Thriller</a></li>
+                            <li><a href="# ">Comedy</a></li>
+                            <li><a href="# ">Horror</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="index.html"><ion-icon name="log-out"></ion-icon> Log out</a></li>
+            </ul>
+    </div>
+    <div class="overlay">
+
+    </div>
+
+    <div class="toggle-menu-button-pc">
+        <ion-icon name="menu"></ion-icon>
+    </div>
+
+    <div class="pc-menu">
+        <ul class="menu-pc">
+            <li class="active"><a href="homepage.html">Home</a></li>
+              <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">Tv shows</a></li>
+            <li class="watchlist-element watchlist-sub-menu"><a href="# ">Watchlist
+                    <ul class="watchlist">
+                        <li><a href="# ">Uncharted</a></li>
+                        <li><a href="# ">X-men apocalypes</a></li>
+                        <li><a href="# ">Aquaman</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="genre-sub-menu">
+                <a href="# ">Geners
+                    <ul class="genre">
+                        <li><a href="# ">Action</a></li>
+                        <li><a href="# ">Romance</a></li>
+                        <li><a href="# ">Sci-fi</a></li>
+                        <li><a href="# ">Thriller</a></li>
+                        <li><a href="# ">Comedy</a></li>
+                        <li><a href="# ">Horror</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+        <div class="search-div">
+            <ion-icon name="search-circle"></ion-icon> <input type="search" placeholder="Search" name="" id="">
+        </div>
+        <div class="search-results">
+
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/tv-show-2.jpeg" alt="">
+                </div>
+                <div class="search-info">
+                    <p>Uncharted</p>
+                    <p>Adenture, Action, Comedy.</p>
+                </div>
+            </div>
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/movie-2.png" alt="">
+                </div>
+                <div class="search-info">
+                    <p>X-men apocalypes</p>
+                    <p>Adenture, Action.</p>
+                </div>
+            </div>
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/tv-show-4.jpeg" alt="">
+                </div>
+                <div class="search-info">
+                    <p>Aquaman</p>
+                    <p>Adenture, Action, Comedy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-body">
+        
+
+        <div class="popular-movies-holder">
+            <h3>Popular Tv shows</h3>
+            <div class="scroller">
+                <div class="popular-movies-slider">
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/tv-show-1.jpeg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/mohin.jpg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/thumbnail-1.jpg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/uncharted.jpg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/tv-show-17jpeg.jpg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/tv-show-6.jpeg" alt="">
+                    </div>
+                    <div class="movie-card-1">
+                        <div class="card-objects">
+                            <div class="love">
+                                <ion-icon name="heart"></ion-icon>
+                            </div>
+                            <div class="view">
+                                <ion-icon name="eye"></ion-icon>
+    
+                            </div>
+                            <div class="play">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                        <img src="images/tv-show-3.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <div class="popular-movies-holder">
+        <h3>Trending TV Shows</h3>
+
+       <div class="scroller">
+        <div class="popular-movies-slider">
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-1.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-2.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-3.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-4.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-5.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-6.jpeg" alt="">
+            </div>
+            <div class="movie-card-1">
+                <div class="card-objects">
+                    <div class="love">
+                        <ion-icon name="heart"></ion-icon>
+                    </div>
+                    <div class="view">
+                        <ion-icon name="eye"></ion-icon>
+
+                    </div>
+                    <div class="play">
+                        <ion-icon name="play"></ion-icon>
+                    </div>
+                </div>
+                <img src="images/tv-show-17jpeg.jpg" alt="">
+            </div>
+        </div>
+       </div>
+    </div>
+    </div>
+
+    <div class="movie-of-the-week">
+        <div class="movie-of-the-week-text">
+            <h1>Tv show of the week</h1>
+            <h1><b>Money Heist</b></h1>
+            <ul class="stars">
+                <li>
+                    <ion-icon name="star"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="star"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="star"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="star"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="star"></ion-icon>
+                </li>
+                <li>(IMDB rating)</li>
+            </ul>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ad impedit in est, debitis hic cupiditate consequuntur architecto
+                error maiores quae fugiat consectetur esse,
+                dicta perferendis. beatae veniam dignissimos minima Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.
+                Ad impedit in est, debitis hic cupiditate consequuntur architecto
+                error maiores quae fugiat consectetur esse,
+                dicta perferendis. beatae veniam dignissimos minima </p>
+
+            <p class="cast">Cast: Jason mamoa, John doe, Jane doe</p>
+        </div>
+        <div class="image">
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="movie-holder-section">
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-17jpeg.jpg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-6.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-3.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-17jpeg.jpg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-6.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-3.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-17jpeg.jpg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-6.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-3.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-17jpeg.jpg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-6.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-3.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-17jpeg.jpg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-4.jpeg" alt="">
+        </div>
+
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-6.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-3.jpeg" alt="">
+        </div>
+        <div class="movie-card-1">
+            <div class="card-objects">
+                <div class="love">
+                    <ion-icon name="heart"></ion-icon>
+                </div>
+                <div class="view">
+                    <ion-icon name="eye"></ion-icon>
+
+                </div>
+                <div class="play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+            <img src="images/tv-show-2.jpeg" alt="">
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="section">
+            <div>
+                <h2>A whole new experience</h2>
+                <p>that's filled with content hourly on the rofessional context it often happen</p>
+                <div class="wrapper-newletter">
+                    <input type="text" placeholder="Email address" name="" id=""><button>
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <h3>About</h3>
+                <ul class="about">
+                    <li><a href="#!">Our Team</a></li>
+                    <li><a href="#!">Clients</a></li>
+                    <li><a href="#!">Press</a></li>
+                    <li><a href="#!">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Active Movie Marathon</h3>
+                <ul class="about">
+                    <li><a href="#!">Moon Knight</a></li>
+                    <li><a href="#!">Halo</a></li>
+                    <li><a href="#!">Castlevania</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Contact us</h3>
+                <ul class="about">
+                    <li>
+                        <ion-icon name="call"></ion-icon> +234-81-435-543-213
+                    </li>
+                    <li>
+                        <ion-icon name="mail"></ion-icon> john@gmail.com
+                    </li>
+                    <li>
+                        <ion-icon name="location"></ion-icon> One Neil Road #02-02, Singapore 088804
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-icon-holder">
+        <div class="copyright-text">
+            <ion-icon name="at-circle"></ion-icon> 2022 Romeoscross pen.All Rights Reserved
+        </div>
+        <div class="terms">
+            <ul>
+                <li>Terms of Services</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <ul class="bottom-icons">
+            <li>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+        </ul>
+    </div>
+    <!--page body ends here-->
+
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        $(".watchlist").fadeOut("fast");
+        $(".genre").fadeOut("fast");
+
+
+        $(".genre-sub-menu").click(function () {
+            $(".genre").fadeToggle("fast");
+        });
+
+
+        $(".watchlist-sub-menu").click(function () {
+            $(".watchlist").fadeToggle("fast");
+        });
+
+
+        $(".search-div").click(function () {
+            $(".search-results").fadeToggle("fast");
+        });
+
+        
+        $(".toggle-menu-button-pc").click(function () {
+            $(".pc-menu").fadeToggle("fast");
+        });
+
+
+        $(".watchlist-element-mobile").click(function () {
+            $("#submenu1").fadeToggle("fast");
+        });
+
+        $(".genre-sub-menu").click(function () {
+            $("#submenu2").fadeToggle("fast");
+        });
+
+        $(".browse").click(function () {
+            $("#submenu3").fadeToggle("fast");
+        });
+
+        
+        $(".overlay").click(function () {
+            $(".overlay").fadeOut("fast");
+            $(".mobile-menu").css("left", "-15rem");
+        });
+
+        $(".toggle-menu-button-pc").click(function () {
+            $(".overlay").fadeIn("fast");
+            $(".mobile-menu").css("left", "0rem");
+        });
+    </script>
+</body>
+
+</html>
