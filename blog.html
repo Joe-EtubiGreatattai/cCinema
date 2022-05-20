@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/hompage.css">
+    <meta name="theme-color" content="red">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<style>
+    .swiper-pagination-bullet {
+        background: red;
+    }
+
+    .blog:nth-child(1){
+    margin-top: 0rem;
+    background: var(--white);
+    padding: 1rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+</style>
+</head>
+
+<body>
+    <div class="alert-holder">
+        <div class="dark"></div>
+        <div class="alert-div">
+            <div>
+                <div id="success">
+                    <div class="alert">
+                        <div class="sucess-icon">
+                            <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                        </div>
+                        <h2 class="alert-header">
+
+                        </h2>
+                        <p class="alert-text">
+                            Registration succesful !, Login ID has been sent to your email.
+                        </p>
+                        <div class="remove">
+                            <ion-icon name="close-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div id="fail">
+                    <div class="alert">
+                        <div class="fail-icon">
+                            <ion-icon name="close-circle-sharp"></ion-icon>
+                        </div>
+                        <h2 class="alert-header">
+
+                        </h2>
+                        <p class="alert-text" id="fail">
+                            Registration Failed !, please try again later.
+                        </p>
+                        <div class="remove">
+                            <ion-icon name="close-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div id="info">
+                    <div class="alert">
+                        <div class="info-icon">
+                            <ion-icon name="information-circle-sharp"></ion-icon>
+                        </div>
+                        <h2 class="alert-header">
+
+                        </h2>
+                        <p class="alert-text">
+                            Oopsl !, there seems to be a problem we'll get back to you soon.
+                        </p>
+                        <div class="remove">
+                            <ion-icon name="close-sharp"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="user-info">
+            <div class="user-info-image">
+                <img src="images/user-2.png" alt="">
+            </div>
+            <div class="user-info-details">
+                <p>John Doe</p>
+                <p>@username</p>
+            </div>
+        </div>
+            <ul class="menu">
+                <li><a href="# "><ion-icon name="home"></ion-icon> <span>Home</span></a></li>
+                <li class="browse"><a href="# "><ion-icon name="search"></ion-icon> Browse</a></li>
+                <ul id="submenu3" class="genre-mobile sub-menu-mobile">
+                    <li> 
+                    <div class="search-div mobile-search">
+                        <ion-icon name="search-circle"></ion-icon> <input type="search" placeholder="Search" name="" id="">
+                    </div>
+                </li>  
+                    </ul>
+                <li><a href="movies.html"><ion-icon name="film"></ion-icon> Movies</a></li>
+                <li><a href="tvshows.html"><ion-icon name="film"></ion-icon>  Tv shows</a></li>
+                <li class="watchlist-element-mobile watchlist-sub-menu"><a href="# "><ion-icon name="list"></ion-icon> Watchlist
+                        <ul id="submenu1" class="watchlist-mobile sub-menu-mobile">
+                            <li><a href="# ">Uncharted</a></li>
+                            <li><a href="# ">X-men apocalypes</a></li>
+                            <li><a href="# ">Aquaman</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="genre-sub-menu">
+                    <a href="# "><ion-icon name="recording"></ion-icon> Geners
+                        <ul id="submenu2" class="genre-mobile sub-menu-mobile">
+                            <li><a href="# ">Action</a></li>
+                            <li><a href="# ">Romance</a></li>
+                            <li><a href="# ">Sci-fi</a></li>
+                            <li><a href="# ">Thriller</a></li>
+                            <li><a href="# ">Comedy</a></li>
+                            <li><a href="# ">Horror</a></li>
+                        </ul>
+                    </a>
+                </li>
+                
+                <li><a href="blog.html"><ion-icon name="newspaper"></ion-icon> Blog</a></li>
+                <li><a href="index.html"><ion-icon name="log-out"></ion-icon> Log out</a></li>
+            </ul>
+    </div>
+    <div class="overlay">
+
+    </div>
+
+    <div class="toggle-menu-button-pc">
+        <ion-icon name="menu"></ion-icon>
+    </div>
+
+    <div class="pc-menu">
+        <ul class="menu-pc">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">Tv shows</a></li>
+            <li class="watchlist-element watchlist-sub-menu"><a href="# ">Watchlist
+                    <ul class="watchlist">
+                        <li><a href="# ">Uncharted</a></li>
+                        <li><a href="# ">X-men apocalypes</a></li>
+                        <li><a href="# ">Aquaman</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li class="genre-sub-menu">
+                <a href="# ">Geners
+                    <ul class="genre">
+                        <li><a href="# ">Action</a></li>
+                        <li><a href="# ">Romance</a></li>
+                        <li><a href="# ">Sci-fi</a></li>
+                        <li><a href="# ">Thriller</a></li>
+                        <li><a href="# ">Comedy</a></li>
+                        <li><a href="# ">Horror</a></li>
+                    </ul>
+                </a>
+            </li>
+            
+            <li class="active"><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <div class="search-div">
+            <ion-icon name="search-circle"></ion-icon> <input type="search" placeholder="Search" name="" id="">
+        </div>
+        <div class="search-results">
+
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/movie-1.jpg" alt="">
+                </div>
+                <div class="search-info">
+                    <p>Uncharted</p>
+                    <p>Adenture, Action, Comedy.</p>
+                </div>
+            </div>
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/movie-2.png" alt="">
+                </div>
+                <div class="search-info">
+                    <p>X-men apocalypes</p>
+                    <p>Adenture, Action.</p>
+                </div>
+            </div>
+            <div class="search-card">
+                <div class="movie-image">
+                    <img src="images/movie-3.jpg" alt="">
+                </div>
+                <div class="search-info">
+                    <p>Aquaman</p>
+                    <p>Adenture, Action, Comedy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="exit">
+            <a href="index.html"><ion-icon name="log-out"></ion-icon></a></li>  
+        </div>
+    </div>
+
+    <div class="page-body">
+       
+
+    <div class="blog">
+
+        <div class="blog-top-div">
+            <div class="left-div">
+                <div class="user-avater">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div>
+                    <p class="name-of-post-user">John Doe</p>
+                    <p class="username-of-post-user">@johndoetrueman</p>
+                </div>
+            </div>
+            <div class="right-div">
+                <button>Follow</button>
+
+                <i class="bi bi-three-dot dots-vertical side-menu"></i>
+            </div>
+        </div>
+      
+        <p class="blog-text">
+            In a professional context it often happens that private or
+            corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixt corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixteenth century.
+        </p>
+        <div class="time-of-post">
+            11:29 PM - 12AM Oct 2013
+        </div>
+        <div class="reaction-div">
+            <ul>
+                <li>
+                    <ion-icon name="chatbox-outline"></ion-icon> <span>4</span>
+                </li>
+                <li>
+                    <ion-icon name="heart-outline"></ion-icon> <span>10</span>
+                </li>
+                <li>
+                    <ion-icon name="repeat-outline"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="share-social-outline"></ion-icon>
+                </li>
+               
+            </ul>
+
+            
+                    <div class="comment-area">
+                        <input type="text" name="" placeholder="comment" id=""> <button>
+                            <ion-icon name="send"></ion-icon>
+                        </button>
+                    </div>
+                
+        </div>
+    </div>
+
+    <div class="blog">
+
+        <div class="blog-top-div">
+            <div class="left-div">
+                <div class="user-avater">
+                    <img src="images/user-2.png" alt="">
+                </div>
+                <div>
+                    <p class="name-of-post-user">Jane Doe</p>
+                    <p class="username-of-post-user">@johndoetrueman</p>
+                </div>
+            </div>
+            <div class="right-div">
+                <button>Follow</button>
+
+                <i class="bi bi-three-dot dots-vertical side-menu"></i>
+            </div>
+        </div>
+
+        <p class="blog-text">
+            In a professional context it often happens that private or
+            corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixt corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixteenth century.
+        </p>
+        <div class="time-of-post">
+            11:29 PM - 12AM Oct 2013
+        </div>
+        <div class="reaction-div">
+            <ul>
+                <li>
+                    <ion-icon name="chatbox-outline"></ion-icon> <span>4</span>
+                </li>
+                <li>
+                    <ion-icon name="heart-outline"></ion-icon> <span>10</span>
+                </li>
+                <li>
+                    <ion-icon name="repeat-outline"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="share-social-outline"></ion-icon>
+                </li>
+               
+            </ul>
+
+            
+                    <div class="comment-area">
+                        <input type="text" name="" placeholder="comment" id=""> <button>
+                            <ion-icon name="send"></ion-icon>
+                        </button>
+                    </div>
+                
+        </div>
+    </div>
+
+    <div class="blog">
+
+        <div class="blog-top-div">
+            <div class="left-div">
+                <div class="user-avater">
+                    <img src="images/user-3.png" alt="">
+                </div>
+                <div>
+                    <p class="name-of-post-user">Jane Doe</p>
+                    <p class="username-of-post-user">@johndoetrueman</p>
+                </div>
+            </div>
+            <div class="right-div">
+                <button>Follow</button>
+
+                <i class="bi bi-three-dot dots-vertical side-menu"></i>
+            </div>
+        </div>
+
+        <p class="blog-text">
+            In a professional context it often happens that private or
+            corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixt corporate clients corder a publication to be made and presented
+            with the actual content still not being ready. Think of a news blog
+            that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by
+            comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus
+            on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly
+            humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants
+            have been employed since the early
+            1960ies, and quite likely since the sixteenth century.
+        </p>
+        <div class="time-of-post">
+            11:29 PM - 12AM Oct 2013
+        </div>
+        <div class="reaction-div">
+            <ul>
+                <li>
+                    <ion-icon name="chatbox-outline"></ion-icon> <span>4</span>
+                </li>
+                <li>
+                    <ion-icon name="heart-outline"></ion-icon> <span>10</span>
+                </li>
+                <li>
+                    <ion-icon name="repeat-outline"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="share-social-outline"></ion-icon>
+                </li>
+               
+            </ul>
+
+            
+                    <div class="comment-area">
+                        <input type="text" name="" placeholder="comment" id=""> <button>
+                            <ion-icon name="send"></ion-icon>
+                        </button>
+                    </div>
+                
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="section">
+            <div>
+                <h2>A whole new experience</h2>
+                <p>that's filled with content hourly on the rofessional context it often happen</p>
+                <div class="wrapper-newletter">
+                    <input type="text" placeholder="Email address" name="" id=""><button>
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <h3>About</h3>
+                <ul class="about">
+                    <li><a href="#!">Our Team</a></li>
+                    <li><a href="#!">Clients</a></li>
+                    <li><a href="#!">Press</a></li>
+                    <li><a href="#!">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Active Movie Marathon</h3>
+                <ul class="about">
+                    <li><a href="#!">Moon Knight</a></li>
+                    <li><a href="#!">Halo</a></li>
+                    <li><a href="#!">Castlevania</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Contact us</h3>
+                <ul class="about">
+                    <li>
+                        <ion-icon name="call"></ion-icon> +234-81-435-543-213
+                    </li>
+                    <li>
+                        <ion-icon name="mail"></ion-icon> john@gmail.com
+                    </li>
+                    <li>
+                        <ion-icon name="location"></ion-icon> One Neil Road #02-02, Singapore 088804
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-icon-holder">
+        <div class="copyright-text">
+            <ion-icon name="at-circle"></ion-icon> 2022 Romeoscross pen.All Rights Reserved
+        </div>
+        <div class="terms">
+            <ul>
+                <li>Terms of Services</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <ul class="bottom-icons">
+            <li>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+            <li>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+        </ul>
+    </div>
+    <!--page body ends here-->
+
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        $(".watchlist").fadeOut("fast");
+        $(".genre").fadeOut("fast");
+
+
+        $(".genre-sub-menu").click(function () {
+            $(".genre").fadeToggle("fast");
+        });
+
+
+        $(".watchlist-sub-menu").click(function () {
+            $(".watchlist").fadeToggle("fast");
+        });
+
+
+        $(".search-div").click(function () {
+            $(".search-results").fadeToggle("fast");
+        });
+
+        
+        $(".toggle-menu-button-pc").click(function () {
+            $(".pc-menu").fadeToggle("fast");
+        });
+
+
+        $(".watchlist-element-mobile").click(function () {
+            $("#submenu1").fadeToggle("fast");
+        });
+
+        $(".genre-sub-menu").click(function () {
+            $("#submenu2").fadeToggle("fast");
+        });
+
+        $(".browse").click(function () {
+            $("#submenu3").fadeToggle("fast");
+        });
+
+        
+        $(".overlay").click(function () {
+            $(".overlay").fadeOut("fast");
+            $(".mobile-menu").css("left", "-15rem");
+        });
+
+        $(".toggle-menu-button-pc").click(function () {
+            $(".overlay").fadeIn("fast");
+            $(".mobile-menu").css("left", "0rem");
+        });
+    </script>
+</body>
+
+</html>
